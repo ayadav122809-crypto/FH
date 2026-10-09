@@ -33,7 +33,7 @@ export default function FreelancerDashboard() {
 
                     <div class="header-title">
 
-                        <h1>Dashboard</h1>
+                        <h1>Dashboard test</h1>
 
                         <p>
                             Hello Ayush, welcome back to your workspace!
