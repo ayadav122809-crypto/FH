@@ -5,6 +5,7 @@ import { userContext } from "../context/UserContext";
 export default function ClientProjectDetails() {
 
     const {id}=useParams();
+    
     const {projectdata} =useContext(userContext);
 
     const [projects,setProjects]=useState(null)
