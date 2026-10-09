@@ -1,0 +1,385 @@
+/* =====================================================
+   FREELANCER SIDEBAR (Exact Match to Design Reference)
+===================================================== */
+
+.freelancer-sidebar {
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+    height: 100vh !important;
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background: #ffffff !important;
+    border-right: 1px solid #f0f3f6 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    z-index: 100 !important;
+    box-sizing: border-box !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    user-select: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+/* Ensure the main dashboard content aligns with the 240px sidebar */
+.dashboard .main-content {
+    margin-left: 240px !important;
+    width: calc(100% - 240px) !important;
+    max-width: calc(100% - 240px) !important;
+}
+
+.freelancer-sidebar .freelancer-sidebar-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: space-between !important;
+}
+
+.freelancer-sidebar .freelancer-sidebar-top {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* =====================================================
+   1. LOGO SECTION (with subtle bottom divider)
+===================================================== */
+.freelancer-sidebar .freelancer-logo-section {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 22px 20px 18px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.freelancer-sidebar .freelancer-logo {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    outline: none !important;
+}
+
+.freelancer-sidebar .freelancer-logo-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ffffff !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+}
+
+/* Scales and centers the circular FH emblem, cropping the text baked into the bottom of Logo.jpeg */
+.freelancer-sidebar .freelancer-logo-icon img {
+    width: 142% !important;
+    height: 142% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: 50% 28% !important;
+    display: block !important;
+    pointer-events: none !important;
+}
+
+.freelancer-sidebar .freelancer-logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1.15 !important;
+}
+
+.freelancer-sidebar .logo-title-freelance {
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
+    color: #0f172a !important;
+    text-transform: uppercase !important;
+    font-family: inherit !important;
+}
+
+.freelancer-sidebar .logo-title-hub {
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
+    color: #0284c7 !important;
+    text-transform: uppercase !important;
+    font-family: inherit !important;
+}
+
+/* =====================================================
+   2. NAVIGATION MENU
+   - Generous top space between logo and Dashboard
+   - Clear spacing between options (Find Work, etc.)
+===================================================== */
+.freelancer-sidebar .freelancer-sidebar-menu {
+    padding: 38px 14px 20px 14px !important; /* Large space between logo and dashboard */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important; /* Airy spacing between all menu options */
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item {
+    position: relative !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-decoration: none !important;
+    color: #64748b !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    transition: background-color 0.16s ease, color 0.16s ease !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    width: 100% !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item:hover {
+    background: #f8fafc !important;
+    color: #0284c7 !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item .menu-icon {
+    width: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 15px !important;
+    color: inherit !important;
+    flex-shrink: 0 !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item .menu-icon i {
+    font-size: 15px !important;
+    color: inherit !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item .menu-label {
+    font-size: 14px !important;
+    color: inherit !important;
+    white-space: nowrap !important;
+}
+
+/* ACTIVE STATE (Find Work) */
+.freelancer-sidebar .freelancer-menu-item.active {
+    background: #edf5ff !important;
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item.active::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 3.5px !important;
+    background: #0284c7 !important;
+    border-radius: 3px 0 0 3px !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item.active .menu-icon,
+.freelancer-sidebar .freelancer-menu-item.active .menu-icon i {
+    color: #0284c7 !important;
+}
+
+.freelancer-sidebar .freelancer-menu-item.active .menu-label {
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+}
+
+/* =====================================================
+   3. BOTTOM ACCOUNT CARD
+   - Subtle top divider line
+   - Fully contained with equal left and right margins
+   - Left-aligned text directly next to avatar
+===================================================== */
+.freelancer-sidebar .freelancer-sidebar-bottom {
+    padding: 16px 14px 18px 14px !important;
+    margin-top: auto !important;
+    background: #ffffff !important;
+    border-top: 1px solid #f1f5f9 !important; /* Subtle top divider */
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.freelancer-sidebar .freelancer-account-card {
+    width: 100% !important;
+    min-height: unset !important;
+    height: auto !important;
+    padding: 9px 12px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02) !important;
+    transition: all 0.18s ease !important;
+}
+
+.freelancer-sidebar .freelancer-account-card:hover {
+    border-color: #cbd5e1 !important;
+    background: #fbfcfe !important;
+}
+
+.freelancer-sidebar .freelancer-account-avatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    border-radius: 50% !important;
+    background: #e0f2fe !important;
+    color: #0284c7 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    transition: transform 0.15s ease !important;
+}
+
+.freelancer-sidebar .freelancer-account-avatar:hover {
+    transform: scale(1.05) !important;
+}
+
+.freelancer-sidebar .freelancer-account-info {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+    overflow: hidden !important;
+    min-width: 0 !important;
+    cursor: pointer !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.freelancer-sidebar .freelancer-account-name {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    display: block !important;
+}
+
+.freelancer-sidebar .freelancer-account-role {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #0284c7 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    display: block !important;
+}
+
+.freelancer-sidebar .freelancer-account-logout {
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 4px 6px !important;
+    color: #94a3b8 !important;
+    cursor: pointer !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    transition: color 0.15s ease, background 0.15s ease !important;
+    flex-shrink: 0 !important;
+}
+
+.freelancer-sidebar .freelancer-account-logout i {
+    font-size: 14px !important;
+    color: inherit !important;
+}
+
+.freelancer-sidebar .freelancer-account-logout:hover {
+    color: #0284c7 !important;
+    background: #f0f7ff !important;
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+    .freelancer-sidebar {
+        width: 76px !important;
+        min-width: 76px !important;
+        max-width: 76px !important;
+    }
+
+    .dashboard .main-content {
+        margin-left: 76px !important;
+        width: calc(100% - 76px) !important;
+        max-width: calc(100% - 76px) !important;
+    }
+
+    .freelancer-sidebar .freelancer-logo-text,
+    .freelancer-sidebar .freelancer-menu-item .menu-label,
+    .freelancer-sidebar .freelancer-account-info,
+    .freelancer-sidebar .freelancer-account-logout {
+        display: none !important;
+    }
+
+    .freelancer-sidebar .freelancer-logo-section {
+        justify-content: center !important;
+        padding: 18px 10px !important;
+    }
+
+    .freelancer-sidebar .freelancer-sidebar-menu {
+        padding: 24px 8px 16px 8px !important;
+        gap: 14px !important;
+    }
+
+    .freelancer-sidebar .freelancer-menu-item {
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    .freelancer-sidebar .freelancer-sidebar-bottom {
+        padding: 12px 8px !important;
+    }
+
+    .freelancer-sidebar .freelancer-account-card {
+        padding: 6px !important;
+        justify-content: center !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+}
